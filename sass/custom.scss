@@ -29,6 +29,9 @@ a:hover {
     background: url(images/menu.svg);
     background-size: cover;
 }
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .bg-top-nav {
     background-color: #300595;
 }
