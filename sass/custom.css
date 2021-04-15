@@ -30,8 +30,10 @@ a:hover {
   background: url(images/menu.svg);
   background-size: cover;
 }
+
 .navbar-toggler:focus {
-    box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .bg-top-nav {
@@ -58,16 +60,27 @@ a:hover {
 .banner {
   padding-top: 20rem;
   color: #ffffff;
-  text-shadow: 1px 3px 0 #3a3a3a, 1px 13px 5px #222222b7;
 }
 
+.banner h1,
+.banner h2,
 .banner p {
-  text-shadow: 1px 3px 4px #3a3a3a;
+  text-shadow: 1px 3px 0 #3a3a3a, 1px 13px 5px #222222b7;
 }
 
 .social img {
   width: 2.5rem;
   padding-bottom: 1rem;
+}
+
+.btn:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.dropdown-menu {
+  background-color: #300595;
+  color: #fff;
 }
 
 .card {
@@ -183,7 +196,7 @@ a:hover {
 
 @media (max-width: 991px) {
   .social {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .social img {
     width: 1.5rem;
